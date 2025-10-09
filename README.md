@@ -219,17 +219,6 @@ MIT License - feel free to use and modify as needed.
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-## Reporting Issues
-
-If you encounter any problems:
-
-    Check the Troubleshooting section above
-    Run with verbose output: python3 8bitdo_updater.py -v (if implemented)
-    Open an issue with:
-        Your Linux distribution and version
-        Your gamepad model
-        The error message or unexpected behavior
-        Output of fwupdmgr get-devices
 
 ## Disclaimer
 
