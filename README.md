@@ -204,7 +204,41 @@ If the firmware flash times out:
 ### fwupd Not Found
 
 Install fwupd for your distribution (see Requirements section above).
+Manual Update Process
 
-## Manual Update Process
+If you prefer to update manually or troubleshoot issues, see the manual guide for detailed instructions.
+How It Works
 
-If you prefer to update manually or troubleshoot issues, see the [manual gu
+This tool automates the process described in the original blog post:
+
+    Queries 8BitDo's API to get available firmware versions
+    Downloads the firmware file from 8BitDo's servers
+    Uses fwupd to detect the connected gamepad in bootloader mode
+    Flashes the firmware using fwupdtool
+
+Credits
+
+    Based on the guide by ladis.cloud
+    Uses fwupd for firmware flashing
+
+License
+
+MIT License - feel free to use and modify as needed.
+Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+Reporting Issues
+
+If you encounter any problems:
+
+    Check the Troubleshooting section above
+    Run with verbose output: python3 8bitdo_updater.py -v (if implemented)
+    Open an issue with:
+        Your Linux distribution and version
+        Your gamepad model
+        The error message or unexpected behavior
+        Output of fwupdmgr get-devices
+
+Disclaimer
+
+This tool is not officially affiliated with or endorsed by 8BitDo. Use at your own risk. Always ensure you're downloading the correct firmware for your specific gamepad model.
