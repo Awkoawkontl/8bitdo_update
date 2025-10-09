@@ -18,15 +18,7 @@ A Python tool to automatically download and flash firmware updates for 8BitDo ga
 
 ## Supported Gamepads
 
-- Arcade Stick
-- Arcade Stick Receiver
-- F30 GamePad / Arcade Stick / Pro
-- Lite GamePad
-- M30
-- N30 GamePad / NS GamePad / Pro / Pro 2
-- Pro 2 / Pro 2 Wired
-- SF30 Pro
-- SN30 GamePad / Pro / Pro+
+- The list is being actively maintained to support all gamepads
 
 ## Requirements
 
