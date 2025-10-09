@@ -325,7 +325,7 @@ def print_instructions():
     print("\n" + "=" * 60)
     print("  INSTRUCTIONS")
     print("=" * 60)
-    print("\n1. Put your gamepad in bootloader mode:")
+    print("\n1. Put your gamepad in bootloader mode (if it is an adapter simply connect it and skip steps 2 and 3):")
     print("   - Hold down L1 + R1 + START for 3 seconds")
     print("   - A status LED should blink RED")
     print("\n2. Connect the gamepad to your computer via USB cable")
