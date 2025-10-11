@@ -53,7 +53,7 @@ pip3 install requests
 1. Clone this repository:
 ```bash
 git clone https://github.com/yourusername/8bitdo-firmware-updater.git
-cd 8bitdo-firmware-updater
+cd 8bitdo_update
 ```
 
 2. Install Python dependencies:
@@ -153,7 +153,7 @@ Downloading firmware: cab12b12-8e01-472f-a9f4-ec2237c598b9.dat...
 Searching for 8BitDo gamepad...
 
 ✓ Found: 8Bitdo SN30 Pro
-  Current version: 1.33
+  Current version: 2.04
   Device ID: 23ec719b6aabc2d2dac5176c232f0da7a21881b0
 
 Proceed with firmware update? (y/n): y
