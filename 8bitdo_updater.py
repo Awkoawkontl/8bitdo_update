@@ -115,7 +115,6 @@ DOWNLOAD_URL = "http://dl.8bitdo.com:8080"
 
 
 def print_header():
-    """Print a nice header"""
     print("\n" + "=" * 60)
     print("  8BitDo Firmware Updater")
     print("=" * 60 + "\n")
